@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Ecommerce Website Desighn</title>
+    <link rel="stylesheet" href="/src/css/commom.css">
+    <link rel="stylesheet" href="/src/css/account.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/src/assets/logo.png" alt="logo" width="125 px">
+        </div>
+        <div class="menu">
+            <ul id="menuItems">
+
+                <li><a href="">Home</a> </li>
+                <li><a href="">Product</a> </li>
+                <li><a href="">About</a> </li>
+                <li><a href="">Contact</a> </li>
+                <li><a href="">Account</a> </li>
+
+            </ul>
+        </div>
+        <img class="bag" src="/src/assets/cart.png">
+        <img src="/src/assets/menu.png" class="menu-icon" onclick="menutoggle()">
+    </nav>
+
+    <div class="center">
+
+        <div class="col_2">
+            <img src="/src/assets/image1.png">
+        </div>
+        <div class="col_2">
+            <div class="form-container">
+                <div class="forms-btn">
+                    <span onclick="login()">login</span>
+                    <span onclick="register()">register</span>
+                    <hr id="indicater">
+                </div>
+                <form id="loginform">
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">log in</button>
+                    <a href="">Forgot password</a>
+                </form>
+
+                <form id="registration">
+                    <input type="text" placeholder="username">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">register</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- -----------------footer------------------------- -->
+
+    <div class="footer">
+        <div class="small_container">
+            <div class="row5">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and ios mobile phone.</p>
+                    <img src="/src/assets/play-store.png">
+                    <img src="/src/assets/app-store.png">
+                </div>
+                <div class="footer-col-2">
+                    <img src="/src/assets/logo-white.png">
+                    <p>our purpose is to sustainably make the pleasure <br> and benefits of sport accessible to the
+                        many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>you tube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Easy Tutorial</p>
+        </div>
+    </div>
+
+    <!-- ---------------------------java script for form------------------------------>
+    <script>
+        var loginform = document.getElementById("loginform");
+        var registration = document.getElementById("registration");;
+        var indicater = document.getElementById("indicater");
+
+        function register() {
+            registration.style.transform = "translateX(0)";
+            loginform.style.transform = "translateX(0)";
+            indicater.style.transform = "translateX(10rem)"
+        }
+
+        function login() {
+            registration.style.transform = "translateX(30rem)";
+            loginform.style.transform = "translateX(30rem)";
+            indicater.style.transform = "translate(0)"
+        }
+    </script>
+</body>
+
+</html>
