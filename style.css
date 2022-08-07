@@ -21,6 +21,7 @@ body {
 
 ul {
     list-style: none;
+    display: inline;
 }
 
 li {
@@ -356,21 +357,21 @@ h3 {
 }
 
 /* -------------------------media quary for menu---------------- */
-
-@media only screen and (max-width: 58rem) {
-
+@media only screen and (max-width: 800px) {
     html {
         font-size: 52%;
     }
 
     .menu ul {
+        right: 0;
+        height: 100%;
         position: absolute;
-        right: 3rem;
-        top: 8rem;
+        top: 9rem;
         background: #555;
         overflow: hidden;
         transition: max-height 0.3s;
     }
+
 
     .menu ul li {
         display: block;
@@ -456,7 +457,7 @@ h3 {
 
 }
 
-@media only screen and (max-width:45rem) {
+@media only screen and (max-width:600px) {
     html {
         font-size: 45%;
     }

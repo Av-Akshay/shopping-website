@@ -1,9 +1,10 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website Desighn</title>
-    <link rel="stylesheet" href="/src/css/commom.css">
-    <link rel="stylesheet" href="/src/css/account.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -13,13 +14,11 @@
         </div>
         <div class="menu">
             <ul id="menuItems">
-
-                <li><a href="">Home</a> </li>
+                <li><a href="../index.html">Home</a> </li>
                 <li><a href="">Product</a> </li>
                 <li><a href="">About</a> </li>
                 <li><a href="">Contact</a> </li>
                 <li><a href="">Account</a> </li>
-
             </ul>
         </div>
         <img class="bag" src="/src/assets/cart.png">
@@ -115,5 +114,20 @@
         }
     </script>
 </body>
+<!-- --------------------js for toggle menu--------------- -->
+<script>
+    var menuItems = document.getElementById("menuItems");
+
+    menuItems.style.maxHeight = "0rem";
+
+    function menutoggle() {
+        if (menuItems.style.maxHeight == "0rem") {
+            menuItems.style.maxHeight = "17rem"
+        }
+        else {
+            menuItems.style.maxHeight = "0rem"
+        }
+    }
+</script>
 
 </html>

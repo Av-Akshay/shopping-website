@@ -1,12 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .navbar{
   background-color: rgba(0,0,0,0.2);
-}
-
-.menu-icon {
-  height: 3rem;
-  width: 3rem;
-  display: none;
 }
 
 .form-container{
@@ -87,4 +86,17 @@ form input{
 }
 #registration{
   left: 0;}
+
+  .row5{
+    margin-top: 0;
+  }
+  @media only screen and (max-width: 800px){
+    .center{
+      flex-direction: column;
+    }
+    .col_2{
+      margin: 0;
+    }
+    
+  }
 
