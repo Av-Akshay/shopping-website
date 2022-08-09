@@ -1,0 +1,37 @@
+.newrow{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 5rem 4.5rem;
+}
+.newrow h2{
+  font-weight: 900;
+  font-size: 2rem;
+}
+select{
+    border: 0.1rem solid #ff523b;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 5rem 1rem;
+}
+.page-btn div{
+    padding: 3rem;
+}
+.page-btn span{
+    font-size: 2.5rem;
+    padding: 0.8rem;
+    border: 0.1rem solid #ff523b;
+    margin-left: 0.4rem;
+    transition: all 0.2s linear;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
